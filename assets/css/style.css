@@ -205,3 +205,11 @@ code {
   .footer-grid { grid-template-columns: 1fr; }
   .logo-frame { transform: none; }
 }
+.contact-grid.single-contact {
+  grid-template-columns: minmax(0, 620px);
+  justify-content: center;
+}
+
+.contact-grid.single-contact .contact-card {
+  width: 100%;
+}
