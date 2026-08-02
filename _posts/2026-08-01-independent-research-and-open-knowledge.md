@@ -1,6 +1,6 @@
 ---
 
-title: "Independent Research and the Value of Open Knowledge"
+"Independent Research and the Value of Open Knowledge"
 description: "A brief introduction to the role of independent research, scientific transparency, and accessible knowledge."
 author: "Xplore Research Institute"
 category: "Research Perspectives"
