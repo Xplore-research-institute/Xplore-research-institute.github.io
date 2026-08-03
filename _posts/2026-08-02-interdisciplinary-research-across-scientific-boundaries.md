@@ -67,6 +67,12 @@ Xplore Research Institute considers interdisciplinary research an essential appr
 
 The purpose of this approach is not merely to place several subjects together. It is to develop coherent research frameworks in which different disciplines contribute directly to the formulation of questions, selection of methods, interpretation of evidence, and communication of findings.
 
+## Related Research Areas
+
+Explore the institute's broader scientific priorities on the
+[Research Areas]({{ '/research/' | relative_url }}) page, including
+fundamental physics, experimental science, and sustainable technology.
+
 ## 7. Conclusion
 
 Interdisciplinary research offers a systematic approach to scientific questions that extend beyond the explanatory capacity of a single discipline. Through the integration of specialized knowledge, compatible methods, and complementary perspectives, it can support deeper understanding and more effective responses to complex problems.
