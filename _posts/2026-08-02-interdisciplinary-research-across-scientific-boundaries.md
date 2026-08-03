@@ -1,10 +1,11 @@
 ---
 layout: article
 title: "Interdisciplinary Research Across Scientific Boundaries"
-description: "An academic perspective on integrating knowledge, methods, and evidence across scientific disciplines."
+description: "An academic examination of how integrated scientific methods and cross-disciplinary collaboration support research on complex systems."
 author: "Xplore Research Institute"
 category: "Interdisciplinary Research"
 read_time: 4
+image: "/assets/images/xplore-logo.jpg"
 ---
 
 ## Abstract
