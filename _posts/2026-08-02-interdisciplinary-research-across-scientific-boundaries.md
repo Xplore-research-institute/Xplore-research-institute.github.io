@@ -5,7 +5,7 @@ description: "An academic perspective on integrating knowledge, methods, and evi
 author: "Xplore Research Institute"
 category: "Interdisciplinary Research"
 read_time: 4
-------------
+---
 
 ## Abstract
 
