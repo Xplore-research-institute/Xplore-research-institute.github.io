@@ -6,8 +6,10 @@
 
   --text: #f4f7fa;
   --muted: #9aa7b5;
+
   --line: rgba(255,255,255,.12);
   --line-strong: rgba(255,255,255,.20);
+
   --accent: #e9f0f7;
 
   --max: 1180px;
@@ -73,8 +75,10 @@ p {
 
 code {
   padding: .15rem .4rem;
+
   border: 1px solid var(--line);
   border-radius: 5px;
+
   background: var(--panel);
 }
 
@@ -94,6 +98,7 @@ code {
   z-index: 50;
 
   background: rgba(5,7,10,.82);
+
   backdrop-filter: blur(18px);
 
   border-bottom: 1px solid var(--line);
@@ -112,6 +117,7 @@ code {
 .brand {
   display: flex;
   align-items: center;
+
   gap: 14px;
 
   letter-spacing: .15em;
@@ -149,6 +155,7 @@ code {
   color: var(--muted);
 
   font-size: .52rem;
+
   letter-spacing: .25em;
 }
 
@@ -159,6 +166,7 @@ code {
   gap: 28px;
 
   color: #c1c9d2;
+
   font-size: .88rem;
 }
 
@@ -170,6 +178,7 @@ code {
   content: "";
 
   position: absolute;
+
   left: 0;
   right: 100%;
   bottom: -7px;
@@ -191,6 +200,7 @@ code {
   border: 0;
 
   color: white;
+
   background: transparent;
 
   font-size: 1.4rem;
@@ -198,7 +208,7 @@ code {
 
 
 /* =========================================================
-   HERO
+   HOME HERO
    ========================================================= */
 
 .hero {
@@ -257,6 +267,23 @@ code {
   position: relative;
 
   z-index: 2;
+}
+
+
+/*
+  Home spacing:
+  approximately 7.5 mm ≈ 28.35 px.
+  We use 30 px for consistent screen rendering.
+*/
+
+.hero-copy {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hero-copy > .eyebrow {
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 
 .eyebrow {
@@ -343,19 +370,20 @@ code {
 
 .button.primary {
   background: #f4f7fa;
+
   color: #05070a;
 }
 
 .button.primary:hover {
   background: #cbd6e0;
+
   transform: translateY(-2px);
 }
 
 .button.secondary:hover {
   border-color: rgba(255,255,255,.5);
 
-  background:
-    rgba(255,255,255,.05);
+  background: rgba(255,255,255,.05);
 }
 
 .button.small {
@@ -368,13 +396,15 @@ code {
 
 
 /* =========================================================
-   HERO STATS
+   HOME STATS
    ========================================================= */
 
 .hero-stats {
   margin-top: 60px;
 
-  padding-top: 28px;
+  padding-top: 30px;
+
+  padding-bottom: 30px;
 
   border-top: 1px solid var(--line);
 
@@ -385,19 +415,24 @@ code {
 
 .hero-stats div {
   display: flex;
+
   flex-direction: column;
 
-  gap: 4px;
+  gap: 7px;
 }
 
 .hero-stats strong {
   font-size: 1.1rem;
+
+  line-height: 1.25;
 }
 
 .hero-stats span {
   color: var(--muted);
 
   font-size: .72rem;
+
+  line-height: 1.45;
 
   text-transform: uppercase;
 
@@ -430,8 +465,7 @@ code {
   width: 45px;
   height: 45px;
 
-  border-color:
-    rgba(255,255,255,.55);
+  border-color: rgba(255,255,255,.55);
 
   pointer-events: none;
 }
@@ -467,8 +501,7 @@ code {
   position: absolute;
 
   border:
-    1px solid
-    rgba(255,255,255,.07);
+    1px solid rgba(255,255,255,.07);
 
   border-radius: 50%;
 }
@@ -497,8 +530,7 @@ code {
 .section {
   padding: 120px 0;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .section-heading {
@@ -537,8 +569,7 @@ code {
 
   color: var(--muted);
 
-  margin:
-    0 0 26px;
+  margin: 0 0 26px;
 }
 
 .section > .container > p:last-of-type {
@@ -565,13 +596,11 @@ code {
 }
 
 .card-grid.three {
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card-grid.two {
-  grid-template-columns:
-    repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -601,6 +630,7 @@ code {
 .research-card,
 .research-detail {
   display: flex;
+
   flex-direction: column;
 
   align-items: flex-start;
@@ -610,14 +640,8 @@ code {
 .research-detail:hover {
   transform: translateY(-5px);
 
-  border-color:
-    rgba(255,255,255,.32);
+  border-color: rgba(255,255,255,.32);
 }
-
-
-/* =========================================================
-   CARD NUMBERS
-   ========================================================= */
 
 .card-number,
 .research-detail > span {
@@ -634,11 +658,6 @@ code {
 
   margin-bottom: 42px;
 }
-
-
-/* =========================================================
-   CARD TITLES
-   ========================================================= */
 
 .research-card h3,
 .research-detail h2 {
@@ -681,13 +700,11 @@ code {
    ========================================================= */
 
 .latest-section {
-  background:
-    rgba(255,255,255,.015);
+  background: rgba(255,255,255,.015);
 }
 
 .article-list {
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .article-row {
@@ -700,8 +717,7 @@ code {
 
   padding: 40px 0;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 
   transition: .25s ease;
 }
@@ -753,7 +769,6 @@ code {
 
 .tag-row {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 8px;
@@ -779,8 +794,7 @@ code {
 .page-hero {
   padding: 165px 0 105px;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .page-hero.compact {
@@ -811,13 +825,12 @@ code {
 
   line-height: 1.75;
 
-  margin:
-    28px 0 0;
+  margin: 28px 0 0;
 }
 
 
 /* =========================================================
-   PUBLICATIONS
+   PUBLICATION TOOLBAR
    ========================================================= */
 
 .publication-toolbar {
@@ -832,22 +845,22 @@ code {
 }
 
 .publication-list {
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 
-/* Main publication card */
+/* =========================================================
+   PUBLICATION CARD
+   ========================================================= */
 
 .publication-item {
   display: block;
 
-  padding: 48px;
+  padding: 50px 48px;
 
   margin: 0 0 28px;
 
-  border:
-    1px solid var(--line);
+  border: 1px solid var(--line);
 
   background:
     linear-gradient(
@@ -864,7 +877,7 @@ code {
 .publication-item h2 {
   max-width: 950px;
 
-  margin: 0 0 32px;
+  margin: 0 0 36px;
 
   font-size:
     clamp(
@@ -892,11 +905,9 @@ code {
 .publication-meta {
   width: 100%;
 
-  margin:
-    34px 0 0;
+  margin: 34px 0 0;
 
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .publication-meta-row {
@@ -913,8 +924,7 @@ code {
 
   padding: 15px 0;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .publication-meta-label {
@@ -956,6 +966,55 @@ code {
 
 
 /* =========================================================
+   SIMPLE PUBLICATION DETAIL LINES
+   ========================================================= */
+
+.pub-detail-line,
+.article-id-line {
+  display: flex;
+
+  align-items: baseline;
+
+  flex-wrap: nowrap;
+
+  gap: 8px;
+
+  margin: 0 0 16px;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+}
+
+.pub-detail-line strong,
+.article-id-line strong {
+  flex: 0 0 auto;
+
+  color: var(--text);
+
+  white-space: nowrap;
+}
+
+.pub-detail-line span,
+.pub-detail-line a,
+.article-id-line span {
+  min-width: 0;
+}
+
+.pub-detail-line a {
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
+
+  overflow-wrap: anywhere;
+}
+
+.publication-doi {
+  margin-top: 24px;
+}
+
+
+/* =========================================================
    PUBLICATION ACTIONS
    ========================================================= */
 
@@ -969,7 +1028,15 @@ code {
 
   gap: 18px;
 
-  margin-top: 34px;
+  margin-top: 40px;
+}
+
+.publication-doi + .publication-actions {
+  margin-top: 40px;
+}
+
+.publication-actions .button {
+  min-width: 190px;
 }
 
 .publication-links {
@@ -979,9 +1046,6 @@ code {
 
   letter-spacing: .09em;
 }
-
-
-/* Legacy year style */
 
 .pub-year {
   font-size: 1.45rem;
@@ -999,8 +1063,7 @@ code {
 
   padding: 24px 26px;
 
-  border-left:
-    2px solid white;
+  border-left: 2px solid white;
 
   background: var(--panel);
 
@@ -1023,8 +1086,7 @@ code {
 .manifesto blockquote {
   max-width: 930px;
 
-  margin:
-    28px auto 0;
+  margin: 28px auto 0;
 
   font-size:
     clamp(
@@ -1046,8 +1108,7 @@ code {
 .prose-grid {
   display: grid;
 
-  grid-template-columns:
-    .8fr 1.2fr;
+  grid-template-columns: .8fr 1.2fr;
 
   gap: 100px;
 }
@@ -1066,15 +1127,13 @@ code {
 }
 
 .prose h2 {
-  margin:
-    0 0 18px;
+  margin: 0 0 18px;
 }
 
 .prose p {
   color: var(--muted);
 
-  margin:
-    0 0 44px;
+  margin: 0 0 44px;
 
   line-height: 1.75;
 }
@@ -1087,8 +1146,7 @@ code {
 .contact-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 24px;
 }
@@ -1108,8 +1166,7 @@ code {
 }
 
 .contact-card h2 {
-  margin:
-    0 0 18px;
+  margin: 0 0 18px;
 
   font-size: 1.15rem;
 
@@ -1138,11 +1195,9 @@ code {
 }
 
 .article-header {
-  padding:
-    70px 0 52px;
+  padding: 70px 0 52px;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .article-header h1 {
@@ -1177,8 +1232,7 @@ code {
 
   flex-wrap: wrap;
 
-  gap:
-    14px 24px;
+  gap: 14px 24px;
 
   color: var(--muted);
 
@@ -1188,8 +1242,7 @@ code {
 
   padding-top: 22px;
 
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .article-content {
@@ -1208,8 +1261,7 @@ code {
 }
 
 .article-content h2 {
-  margin:
-    2.8em 0 .8em;
+  margin: 2.8em 0 .8em;
 
   font-family:
     Inter,
@@ -1221,8 +1273,7 @@ code {
 }
 
 .article-content h3 {
-  margin:
-    2.2em 0 .7em;
+  margin: 2.2em 0 .7em;
 
   font-family:
     Inter,
@@ -1237,8 +1288,7 @@ code {
 }
 
 .article-content p {
-  margin:
-    0 0 1.45em;
+  margin: 0 0 1.45em;
 }
 
 .article-content li {
@@ -1252,14 +1302,11 @@ code {
 }
 
 .article-content blockquote {
-  margin:
-    2.4rem 0;
+  margin: 2.4rem 0;
 
-  padding:
-    8px 0 8px 26px;
+  padding: 8px 0 8px 26px;
 
-  border-left:
-    2px solid white;
+  border-left: 2px solid white;
 
   color: #b7c0c9;
 }
@@ -1270,8 +1317,7 @@ code {
    ========================================================= */
 
 .site-footer {
-  padding:
-    80px 0 28px;
+  padding: 80px 0 28px;
 
   background: #030405;
 }
@@ -1279,8 +1325,7 @@ code {
 .footer-grid {
   display: grid;
 
-  grid-template-columns:
-    2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
 
   gap: 60px;
 }
@@ -1322,8 +1367,7 @@ code {
 }
 
 .copyright {
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 
   margin-top: 65px;
 
@@ -1336,201 +1380,9 @@ code {
 
 
 /* =========================================================
-   TABLET
+   LARGE SCREENS
    ========================================================= */
 
-@media (max-width: 900px) {
-
-  .hero {
-    min-height: auto;
-
-    padding: 100px 0;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-
-    gap: 55px;
-  }
-
-  .hero-visual {
-    max-width: 560px;
-  }
-
-  .card-grid.three,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-grid.two,
-  .prose-grid {
-    grid-template-columns: 1fr;
-
-    gap: 45px;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-
-    top: 76px;
-    left: 0;
-    right: 0;
-
-    display: none;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 20px;
-
-    padding: 28px 20px;
-
-    background: #070a0e;
-
-    border-bottom:
-      1px solid var(--line);
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .publication-item {
-    padding: 38px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .container {
-    width:
-      min(
-        calc(100% - 28px),
-        var(--max)
-      );
-  }
-
-  .hero h1 {
-    font-size: 3.35rem;
-  }
-
-  .hero-stats {
-    gap: 22px;
-
-    flex-wrap: wrap;
-  }
-
-  .section {
-    padding: 82px 0;
-  }
-
-  .section-heading {
-    align-items: flex-start;
-
-    flex-direction: column;
-
-    gap: 18px;
-
-    margin-bottom: 42px;
-  }
-
-  .research-card,
-  .research-detail,
-  .contact-card {
-    padding: 30px;
-
-    min-height: auto;
-  }
-
-  .card-number,
-  .research-detail > span {
-    margin-bottom: 30px;
-  }
-
-  .article-row {
-    grid-template-columns: 1fr;
-
-    gap: 18px;
-
-    padding: 32px 0;
-  }
-
-  .article-row:hover {
-    padding-left: 0;
-  }
-
-  .publication-item {
-    padding: 30px 24px;
-
-    margin-bottom: 22px;
-  }
-
-  .publication-item h2 {
-    margin-bottom: 28px;
-  }
-
-  .publication-meta-row {
-    grid-template-columns: 1fr;
-
-    gap: 8px;
-
-    align-items: start;
-
-    padding: 18px 0;
-  }
-
-  .publication-meta-label {
-    white-space: normal;
-  }
-
-  .publication-meta-value {
-    font-size: .92rem;
-  }
-
-  .publication-actions {
-    margin-top: 28px;
-  }
-
-  .publication-actions .button {
-    width: 100%;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-  }
-
-  .logo-frame {
-    transform: none;
-  }
-
-  .page-hero {
-    padding:
-      125px 0 80px;
-  }
-
-  .page-hero.compact {
-    padding-bottom: 70px;
-  }
-
-}
-/* =========================================================
-   RESPONSIVE REFINEMENTS
-   ========================================================= */
-
-/* Large screens */
 @media (min-width: 1400px) {
 
   .container {
@@ -1540,7 +1392,10 @@ code {
 }
 
 
-/* Tablets and smaller laptops */
+/* =========================================================
+   SMALL LAPTOP / TABLET LANDSCAPE
+   ========================================================= */
+
 @media (max-width: 1024px) {
 
   .section {
@@ -1556,28 +1411,36 @@ code {
   }
 
   .publication-meta-row {
-    grid-template-columns: 160px minmax(0, 1fr);
+    grid-template-columns:
+      160px minmax(0, 1fr);
+
     gap: 24px;
   }
 
 }
 
 
-/* Tablets */
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media (max-width: 900px) {
 
   .hero {
     min-height: auto;
+
     padding: 95px 0;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
+
     gap: 50px;
   }
 
   .hero-visual {
     max-width: 560px;
+
     width: 100%;
   }
 
@@ -1597,7 +1460,7 @@ code {
   }
 
   .publication-item {
-    padding: 38px 32px;
+    padding: 40px 32px;
   }
 
   .nav-toggle {
@@ -1632,7 +1495,10 @@ code {
 }
 
 
-/* Mobile devices */
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
 
   .container {
@@ -1641,6 +1507,48 @@ code {
 
   body {
     font-size: 15px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero-copy {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero-copy > .eyebrow {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size:
+      clamp(
+        3rem,
+        14vw,
+        4rem
+      );
+  }
+
+  .hero-copy > p {
+    font-size: 1rem;
+
+    margin: 28px 0;
+  }
+
+  .hero-stats {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 26px;
+
+    margin-top: 48px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section {
@@ -1656,35 +1564,20 @@ code {
   }
 
   .page-hero h1 {
-    font-size: clamp(2.6rem, 13vw, 4rem);
+    font-size:
+      clamp(
+        2.6rem,
+        13vw,
+        4rem
+      );
+
     line-height: 1;
   }
 
   .page-hero p {
     font-size: 1rem;
+
     margin-top: 24px;
-  }
-
-  .hero {
-    padding: 80px 0;
-  }
-
-  .hero h1 {
-    font-size: clamp(3rem, 14vw, 4rem);
-  }
-
-  .hero-copy > p {
-    font-size: 1rem;
-    margin: 28px 0;
-  }
-
-  .hero-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 24px;
-
-    margin-top: 45px;
   }
 
   .section-heading {
@@ -1696,11 +1589,17 @@ code {
   }
 
   .section-heading h2 {
-    font-size: clamp(2rem, 9vw, 2.8rem);
+    font-size:
+      clamp(
+        2rem,
+        9vw,
+        2.8rem
+      );
   }
 
   .card-grid {
     gap: 18px;
+
     margin-top: 30px;
   }
 
@@ -1741,7 +1640,7 @@ code {
   }
 
   .publication-item {
-    padding: 28px 22px;
+    padding: 30px 22px;
 
     margin-bottom: 20px;
   }
@@ -1755,7 +1654,7 @@ code {
 
     line-height: 1.4;
 
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   .publication-meta {
@@ -1769,7 +1668,7 @@ code {
 
     min-height: auto;
 
-    padding: 17px 0;
+    padding: 18px 0;
   }
 
   .publication-meta-label {
@@ -1784,12 +1683,29 @@ code {
     overflow-wrap: anywhere;
   }
 
+  .pub-detail-line,
+  .article-id-line {
+    gap: 7px;
+  }
+
+  .publication-doi {
+    align-items: flex-start;
+  }
+
+  .publication-doi a {
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+  }
+
   .publication-actions {
-    margin-top: 28px;
+    margin-top: 36px;
   }
 
   .publication-actions .button {
     width: 100%;
+
+    min-width: 0;
   }
 
   .button {
@@ -1811,7 +1727,12 @@ code {
   }
 
   .article-header h1 {
-    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    font-size:
+      clamp(
+        2.2rem,
+        10vw,
+        3.5rem
+      );
 
     line-height: 1.08;
   }
@@ -1857,7 +1778,10 @@ code {
 }
 
 
-/* Small mobile phones */
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
 @media (max-width: 400px) {
 
   .container {
@@ -1886,208 +1810,6 @@ code {
 
   .publication-item h2 {
     font-size: 1.3rem;
-  }
-
-}
-/* =========================================================
-   FINAL SPACING & PUBLICATION REFINEMENTS
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   HOME HERO — MORE BREATHING SPACE
-   --------------------------------------------------------- */
-
-/* فاصله محتوای اصلی هوم از خطوط بالا و پایین */
-.hero-copy {
-  padding-top: 42px;
-  padding-bottom: 52px;
-}
-
-/* فاصله Independent Scientific Research از بخش بالاتر */
-.hero-copy > .eyebrow {
-  margin-top: 18px;
-  margin-bottom: 26px;
-}
-
-/* فاصله آمار از محتوای قبل */
-.hero-stats {
-  margin-top: 62px;
-  padding-top: 30px;
-
-  /* فاصله آمار از خط پایینی Hero */
-  margin-bottom: 34px;
-}
-
-/* فاصله داخلی عدد و عنوان آمار */
-.hero-stats div {
-  gap: 7px;
-}
-
-.hero-stats strong {
-  line-height: 1.25;
-}
-
-.hero-stats span {
-  line-height: 1.45;
-}
-
-
-/* ---------------------------------------------------------
-   PUBLICATION DETAIL LINES
-   --------------------------------------------------------- */
-
-.pub-detail-line {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: nowrap;
-
-  gap: 8px;
-
-  margin: 0 0 15px;
-
-  color: var(--muted);
-
-  line-height: 1.6;
-}
-
-.pub-detail-line strong {
-  flex: 0 0 auto;
-
-  color: var(--text);
-
-  white-space: nowrap;
-}
-
-.pub-detail-line span,
-.pub-detail-line a {
-  min-width: 0;
-}
-
-.pub-detail-line a {
-  overflow-wrap: anywhere;
-
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-
-/* ---------------------------------------------------------
-   ARTICLE ID — KEEP LABEL + VALUE TOGETHER
-   --------------------------------------------------------- */
-
-.article-id-line {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: nowrap;
-
-  gap: 8px;
-
-  margin-bottom: 15px;
-
-  color: var(--muted);
-}
-
-.article-id-line strong {
-  color: var(--text);
-
-  white-space: nowrap;
-}
-
-
-/* ---------------------------------------------------------
-   DOI + BUTTON SPACING
-   --------------------------------------------------------- */
-
-.publication-doi {
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.publication-actions {
-  margin-top: 42px;
-  padding-top: 4px;
-}
-
-/* فاصله دکمه سفید از DOI */
-.publication-doi + .publication-actions {
-  margin-top: 38px;
-}
-
-
-/* ---------------------------------------------------------
-   PUBLICATION BUTTON
-   --------------------------------------------------------- */
-
-.publication-actions .button {
-  min-width: 180px;
-}
-
-
-/* ---------------------------------------------------------
-   PUBLICATION CARD INTERNAL SPACING
-   --------------------------------------------------------- */
-
-.publication-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.publication-item h2 {
-  margin-bottom: 36px;
-}
-
-
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
-
-@media (max-width: 600px) {
-
-  .hero-copy {
-    padding-top: 28px;
-    padding-bottom: 36px;
-  }
-
-  .hero-copy > .eyebrow {
-    margin-top: 16px;
-    margin-bottom: 24px;
-  }
-
-  .hero-stats {
-    margin-top: 48px;
-    padding-top: 28px;
-    margin-bottom: 24px;
-  }
-
-  /*
-   مشخصات کوتاه مثل Type و Article ID
-   همچنان در یک خط باقی می‌مانند.
-  */
-  .pub-detail-line,
-  .article-id-line {
-    gap: 7px;
-  }
-
-  /*
-   DOI در موبایل در صورت نیاز می‌تواند بشکند
-   تا از کادر خارج نشود.
-  */
-  .publication-doi {
-    align-items: flex-start;
-  }
-
-  .publication-doi a {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-
-  .publication-actions {
-    margin-top: 34px;
-  }
-
-  .publication-actions .button {
-    width: 100%;
   }
 
 }
