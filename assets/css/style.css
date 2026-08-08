@@ -1889,3 +1889,205 @@ code {
   }
 
 }
+/* =========================================================
+   FINAL SPACING & PUBLICATION REFINEMENTS
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   HOME HERO — MORE BREATHING SPACE
+   --------------------------------------------------------- */
+
+/* فاصله محتوای اصلی هوم از خطوط بالا و پایین */
+.hero-copy {
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
+/* فاصله Independent Scientific Research از بخش بالاتر */
+.hero-copy > .eyebrow {
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+
+/* فاصله آمار از محتوای قبل */
+.hero-stats {
+  margin-top: 62px;
+  padding-top: 30px;
+
+  /* فاصله آمار از خط پایینی Hero */
+  margin-bottom: 34px;
+}
+
+/* فاصله داخلی عدد و عنوان آمار */
+.hero-stats div {
+  gap: 7px;
+}
+
+.hero-stats strong {
+  line-height: 1.25;
+}
+
+.hero-stats span {
+  line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   PUBLICATION DETAIL LINES
+   --------------------------------------------------------- */
+
+.pub-detail-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
+  gap: 8px;
+
+  margin: 0 0 15px;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+}
+
+.pub-detail-line strong {
+  flex: 0 0 auto;
+
+  color: var(--text);
+
+  white-space: nowrap;
+}
+
+.pub-detail-line span,
+.pub-detail-line a {
+  min-width: 0;
+}
+
+.pub-detail-line a {
+  overflow-wrap: anywhere;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* ---------------------------------------------------------
+   ARTICLE ID — KEEP LABEL + VALUE TOGETHER
+   --------------------------------------------------------- */
+
+.article-id-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  color: var(--muted);
+}
+
+.article-id-line strong {
+  color: var(--text);
+
+  white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   DOI + BUTTON SPACING
+   --------------------------------------------------------- */
+
+.publication-doi {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.publication-actions {
+  margin-top: 42px;
+  padding-top: 4px;
+}
+
+/* فاصله دکمه سفید از DOI */
+.publication-doi + .publication-actions {
+  margin-top: 38px;
+}
+
+
+/* ---------------------------------------------------------
+   PUBLICATION BUTTON
+   --------------------------------------------------------- */
+
+.publication-actions .button {
+  min-width: 180px;
+}
+
+
+/* ---------------------------------------------------------
+   PUBLICATION CARD INTERNAL SPACING
+   --------------------------------------------------------- */
+
+.publication-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.publication-item h2 {
+  margin-bottom: 36px;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .hero-copy {
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+
+  .hero-copy > .eyebrow {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-stats {
+    margin-top: 48px;
+    padding-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  /*
+   مشخصات کوتاه مثل Type و Article ID
+   همچنان در یک خط باقی می‌مانند.
+  */
+  .pub-detail-line,
+  .article-id-line {
+    gap: 7px;
+  }
+
+  /*
+   DOI در موبایل در صورت نیاز می‌تواند بشکند
+   تا از کادر خارج نشود.
+  */
+  .publication-doi {
+    align-items: flex-start;
+  }
+
+  .publication-doi a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .publication-actions {
+    margin-top: 34px;
+  }
+
+  .publication-actions .button {
+    width: 100%;
+  }
+
+}
